@@ -28,11 +28,23 @@ h2{
 .addressinfo{
   float: left;
 }
+/*
+.addressinfo:hover{
+  animation-name:AnimAddress;
+  animation-duration: 5s;
+}
+*/
 .photo{
   float: right;
 }
 #photo-cv{
   height: 300px;
+  border-radius:25px;
+  box-shadow: 5px 10px 15px black;
+}
+#photo-cv:hover{
+    animation-name: AnimPhoto;
+    animation-duration: 4s;
 }
 .sec-global{
   margin-bottom: 70px;
@@ -63,3 +75,31 @@ h2{
 #exp-gauche p{
 margin-bottom: 37px;
 }
+
+/*Animation de la photo */
+@keyframes AnimPhoto {
+  from{
+    /*width: 100%;
+    height: 100%;*/
+    height: 300px;
+    border-radius:25px;
+    box-shadow: 5px 10px 15px black;
+  }
+  to{
+    /*width: 200%;
+    height: 200%;*/
+    height: 600px;
+    border-radius:50px;
+    box-shadow: 20px 40px 60px black;
+  }
+}
+/*
+@keyframes AnimAddress {
+  from{
+
+  }
+  to{
+    background-color: beige;
+  }
+}
+*/
